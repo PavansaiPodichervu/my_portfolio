@@ -38,14 +38,14 @@ body.light {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 20px; /* Reduced padding for smaller screens */
   background: var(--secondary-dark);
   box-shadow: 0 2px 10px var(--shadow-color);
   z-index: 1000;
 }
 
 .logo-text {
-  font-size: 28px;
+  font-size: 24px; /* Slightly smaller for mobile */
   color: var(--primary-accent);
   font-weight: 600;
   background: rgba(100, 255, 218, 0.1);
@@ -56,13 +56,14 @@ body.light {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 15px; /* Reduced gap for smaller screens */
 }
 
 .navbar a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: 400;
+  font-size: 14px; /* Smaller font for mobile */
   transition: color 0.3s;
 }
 
@@ -74,25 +75,21 @@ body.light {
   background: none;
   border: none;
   color: var(--primary-accent);
-  font-size: 20px;
+  font-size: 18px; /* Adjusted for mobile */
   cursor: pointer;
 }
 
 /* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(
-    135deg,
-    var(--gradient-start),
-    var(--gradient-end)
-  );
+  padding: 60px 15px; /* Reduced padding for mobile */
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
 }
 
 .hero h2 {
-  font-size: 56px;
+  font-size: 36px; /* Smaller for mobile */
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .highlight {
@@ -101,23 +98,24 @@ body.light {
 }
 
 #microservices-text {
-  font-size: 28px;
+  font-size: 20px; /* Adjusted for mobile */
   animation: pulse 2s infinite;
 }
 
 .hero p {
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 20px; /* Smaller for mobile */
+  margin-bottom: 20px;
 }
 
 .btn {
-  padding: 14px 30px;
+  padding: 10px 20px; /* Smaller buttons for mobile */
   background: var(--secondary-accent);
   color: var(--text-dark);
   text-decoration: none;
   border-radius: 5px;
-  margin: 10px;
+  margin: 5px;
   font-weight: 600;
+  font-size: 14px; /* Adjusted font size */
   transition: background 0.3s;
 }
 
@@ -127,7 +125,7 @@ body.light {
 
 /* Sections */
 .section {
-  padding: 60px 20px;
+  padding: 40px 15px; /* Reduced padding for mobile */
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -142,15 +140,15 @@ body.light {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 32px; /* Smaller for mobile */
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--primary-accent);
 }
 
 h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 20px; /* Adjusted for mobile */
+  margin-bottom: 10px;
   color: var(--text-light);
 }
 
@@ -159,27 +157,27 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px; /* Reduced gap for mobile */
   flex-wrap: wrap;
-  max-width: 1000px; /* Restrict width for better readability */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-container p {
-  text-align: justify; /* Clean, justified text */
-  font-size: 16px;
-  line-height: 1.8; /* Improved readability */
-  max-width: 700px; /* Prevent text from stretching too wide */
+  text-align: justify;
+  font-size: 14px; /* Smaller for mobile */
+  line-height: 1.8;
+  max-width: 700px;
 }
 
 .about-container p strong {
-  color: var(--secondary-accent); /* Bold text in yellow */
+  color: var(--secondary-accent);
   font-weight: 600;
 }
 
 .profile-img {
-  width: 220px;
-  height: 220px;
+  width: 150px; /* Smaller for mobile */
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -195,16 +193,16 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px; /* Reduced gap for mobile */
 }
 
 .skills-group {
   background: var(--secondary-dark);
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
   border-radius: 10px;
   box-shadow: 0 4px 6px var(--shadow-color);
   width: 100%;
-  max-width: 400px;
+  max-width: 350px; /* Adjusted for smaller screens */
   transition: transform 0.3s ease;
 }
 
@@ -214,10 +212,10 @@ h3 {
 
 .skills-group h3 {
   color: var(--primary-accent);
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px; /* Smaller for mobile */
+  margin-bottom: 15px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 2px solid var(--secondary-accent);
 }
 
@@ -225,12 +223,12 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px; /* Reduced gap */
 }
 
 .skill-hex {
-  width: 80px;
-  height: 92px;
+  width: 70px; /* Smaller for mobile */
+  height: 80px;
   background: rgba(100, 255, 218, 0.1);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex;
@@ -245,24 +243,24 @@ h3 {
 }
 
 .skill-hex img {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Smaller icons */
+  height: 40px;
 }
 
 .microservices-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px; /* Adjusted for mobile */
+  height: 50px;
 }
 
 /* Experience & Projects */
 .exp-card,
 .project-card {
   background: var(--secondary-dark);
-  padding: 30px;
+  padding: 20px; /* Reduced padding */
   border-radius: 10px;
   text-align: left;
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 100%; /* Full width on mobile */
+  margin: 15px auto;
   transition: transform 0.3s;
 }
 
@@ -273,7 +271,8 @@ h3 {
 
 .exp-card ul {
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 15px;
+  font-size: 14px; /* Smaller text */
 }
 
 /* Hobbies */
@@ -281,12 +280,12 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 20px; /* Reduced gap */
 }
 
 .hobby-card {
-  width: 230px;
-  height: 230px;
+  width: 180px; /* Smaller for mobile */
+  height: 180px;
   background: var(--gradient-end);
   border-radius: 50%;
   display: flex;
@@ -294,7 +293,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
@@ -307,21 +306,23 @@ h3 {
 }
 
 .hobby-title {
-  font-size: 18px;
+  font-size: 16px; /* Smaller for mobile */
   font-weight: 600;
   color: var(--primary-accent);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .hobby-card p {
-  font-size: 14px;
+  font-size: 12px; /* Smaller text */
 }
 
 /* Resume */
 .resume-buttons {
   display: flex;
-  gap: 20px;
+  flex-direction: column; /* Stack buttons on mobile */
+  gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 /* Contact */
@@ -337,23 +338,24 @@ h3 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 20px auto;
+  gap: 10px;
+  max-width: 100%; /* Full width on mobile */
+  margin: 15px auto;
+  padding: 0 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: 8px;
   border: none;
   border-radius: 5px;
   background: var(--text-light);
   color: var(--text-dark);
-  font-size: 16px;
+  font-size: 14px; /* Smaller for mobile */
 }
 
 .contact-form textarea {
-  height: 100px;
+  height: 80px; /* Reduced height */
   resize: none;
 }
 
@@ -364,14 +366,14 @@ h3 {
 /* Scroll to Top */
 #scroll-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   background: var(--secondary-accent);
   color: var(--text-dark);
   border: none;
-  padding: 12px 18px;
+  padding: 10px 15px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   display: none;
   transition: background 0.3s;
@@ -384,15 +386,15 @@ h3 {
 /* Footer */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background: var(--secondary-dark);
-  font-size: 14px;
+  font-size: 12px; /* Smaller for mobile */
 }
 
 .social-links a {
   color: var(--text-light);
-  font-size: 28px;
-  margin: 0 15px;
+  font-size: 24px; /* Adjusted for mobile */
+  margin: 0 10px;
   transition: color 0.3s;
 }
 
@@ -401,9 +403,9 @@ footer {
 }
 
 .social-links .blog-link {
-  font-size: 20px;
+  font-size: 16px; /* Smaller for mobile */
   background: var(--secondary-accent);
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-radius: 20px;
   color: var(--text-dark);
   text-decoration: none;
@@ -467,13 +469,223 @@ body.light h3 {
 
 /* Animation */
 @keyframes pulse {
-  0% {
-    transform: scale(1);
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
   }
-  50% {
-    transform: scale(1.1);
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
-  100% {
-    transform: scale(1);
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  #microservices-text {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container p {
+    font-size: 13px;
+    max-width: 90%;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skills-group {
+    max-width: 300px;
+  }
+
+  .skill-hex {
+    width: 60px;
+    height: 70px;
+  }
+
+  .skill-hex img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .microservices-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .hobby-card {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+  }
+
+  .hobby-title {
+    font-size: 14px;
+  }
+
+  .hobby-card p {
+    font-size: 11px;
+  }
+
+  .resume-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    gap: 8px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  #theme-toggle {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  #microservices-text {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .about-container p {
+    font-size: 12px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills-group {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .skill-hex {
+    width: 50px;
+    height: 58px;
+  }
+
+  .skill-hex img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .microservices-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .exp-card,
+  .project-card {
+    padding: 15px;
+  }
+
+  .exp-card ul {
+    font-size: 12px;
+  }
+
+  .hobby-card {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+
+  .hobby-title {
+    font-size: 12px;
+  }
+
+  .hobby-card p {
+    font-size: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+  }
+
+  .social-links a {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+
+  .social-links .blog-link {
+    font-size: 14px;
+    padding: 4px 8px;
   }
 }
