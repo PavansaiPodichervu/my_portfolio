@@ -80,9 +80,14 @@ sections.forEach((section) => observer.observe(section));
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert(
-      "Message sent! (This is a demo - form functionality requires backend integration)"
-    );
+    e.preventDefault(); // Prevent default only if you want custom handling
+    // Formspree handles submission; just reset the form after success
     this.reset();
+    // Optional: Add a success message
+    const successMsg = document.createElement("p");
+    successMsg.textContent = "Message sent successfully!";
+    successMsg.style.color = "#64ffda";
+    this.appendChild(successMsg);
+    setTimeout(() => successMsg.remove(), 3000);
   });
+
