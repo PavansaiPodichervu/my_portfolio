@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavan Sai Podichervu - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-text">[PS]</span>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+    <div class="hero">
+      <h2>Hello, I'm <span id="typed-name" class="highlight"></span></h2>
+      <p>Full Stack Developer | <span id="microservices-text" class="highlight">Microservices Developer</span></p>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="./myprofile.jpg" alt="Pavan Sai" class="profile-img">
+      <p>
+        I’m a <strong>Full Stack Developer</strong> who’s always evolving and growing. Starting with a focus on
+        <strong>Java</strong> and backend development, I expanded into a holistic approach to software engineering. My
+        first major role involved building <strong>REST APIs</strong> and <strong>microservices</strong> for enterprise
+        applications using <strong>Spring Boot</strong>, <strong>Hibernate</strong>, and <strong>PostgreSQL</strong>,
+        while also mastering <strong>React</strong> for frontends. Projects like <strong>Pro Attendance</strong> taught
+        me scalable solutions, <strong>microservices architecture</strong>, <strong>Agile methodologies</strong>, and
+        <strong>AWS</strong>, sharpening my collaboration and problem-solving skills. I thrive in Agile teams,
+        delivering innovative, customer-centric solutions with high-performance backends and intuitive UIs. Passionate
+        about learning, I’m now exploring <strong>Kubernetes</strong>, cloud integration, and full-stack trends, driven
+        to create impactful software that solves real-world challenges.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technologies I’ve Worked With</h2>
+    <div class="skills-wrapper">
+      <div class="skills-group">
+        <h3>Frontend</h3>
+        <div class="skills-container">
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/html5/html5-original.svg"
+              alt="HTML" title="HTML"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/css3/css3-original.svg"
+              alt="CSS" title="CSS"></div>
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/javascript/javascript-original.svg"
+              alt="JavaScript" title="JavaScript"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/react/react-original.svg"
+              alt="React.js" title="React.js"></div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Backend</h3>
+        <div class="skills-container">
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/java/java-original.svg"
+              alt="Java" title="Java"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/spring/spring-original.svg"
+              alt="Spring Boot" title="Spring Boot"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/linux/linux-original.svg"
+              alt="Microservices" title="Microservices" class="microservices-icon"></div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Databases</h3>
+        <div class="skills-container">
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" title="PostgreSQL"></div>
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+              title="MongoDB"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/mysql/mysql-original.svg"
+              alt="MySQL" title="MySQL"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/redis/redis-original.svg"
+              alt="Redis" title="Redis"></div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Tools</h3>
+        <div class="skills-container">
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/git/git-original.svg"
+              alt="Git" title="Git"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/github/github-original.svg"
+              alt="GitHub" title="GitHub"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/docker/docker-original.svg"
+              alt="Docker" title="Docker"></div>
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"
+              title="Kubernetes"></div>
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/amazonwebservices/amazonwebservices-original.svg"
+              alt="AWS" title="AWS"></div>
+          <div class="skill-hex"><img src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/jira/jira-original.svg"
+              alt="JIRA" title="JIRA"></div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Testing</h3>
+        <div class="skills-container">
+          <div class="skill-hex">
+            <img src="https://cdn.jsdelivr.net/npm/devicon/icons/junit/junit-original-wordmark.svg" alt="JUnit"
+              title="JUnit">
+          </div>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Messaging</h3>
+        <div class="skills-container">
+          <div class="skill-hex"><img
+              src="https://cdn.jsdelivr.net/npm/devicon@2.15.1/icons/apachekafka/apachekafka-original.svg" alt="Kafka"
+              title="Kafka"></div>
+          <div class="skill-hex">
+            <img src="https://cdn.jsdelivr.net/npm/devicon/icons/rabbitmq/rabbitmq-original-wordmark.svg" alt="RabbitMQ"
+              title="RabbitMQ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="exp-card">
+      <h3>Associate Software Developer</h3>
+      <p>TestYantra Software Solutions Pvt Ltd, Bengaluru | May 2023 – Present</p>
+      <ul>
+        <li>Contributed to scalable systems using Java, Spring Boot, and Microservices.</li>
+        <li>Developed Pro Attendance and Food Flow projects.</li>
+        <li>Implemented Docker, Kubernetes, and AWS CI/CD pipelines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Pro Attendance</h3>
+      <p><strong>Apr 2024 - Present | TestYantra Software Solutions</strong></p>
+      <p>Pro Attendance is a comprehensive attendance and time management system designed to track and manage employee
+        attendance efficiently. It calculates total hours worked based on login and logout times and provides an easy
+        way to monitor productivity. Pro Attendance enables employees to download detailed timesheets, ensuring seamless
+        payroll and time tracking processes. The application is intuitive and caters to businesses looking for an
+        efficient solution to manage employee work hours and attendance records.</p>
+      <p><strong>Skills:</strong> Spring Security · Spring Boot · Microservices · Docker · Kubernetes</p>
+    </div>
+    <div class="project-card">
+      <h3>FoodFlow</h3>
+      <p><strong>Aug 2023 - Feb 2024 | TestYantra Software Solutions</strong></p>
+      <p>FoodFlow is a comprehensive food ordering and management application designed to facilitate seamless
+        interaction between customers and staff across multiple branches. The app enables customers to effortlessly
+        place orders while allowing staff to efficiently manage them, ensuring smooth and timely order fulfillment. With
+        real-time order processing and integration with backend APIs, FoodFlow provides an intuitive and reliable
+        solution for businesses to streamline their food service operations across various locations.</p>
+      <p><strong>Skills:</strong> Spring Boot · MySQL · Spring Security · React.js · JUnit</p>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <div class="resume-buttons">
+      <a href="./PODICHERVU_PAVAN_SAI_ASSOCIATE_SOFTWARE_DEVELOPER.pdf" target="_blank" class="btn">View
+        Resume</a>
+      <a href="./PODICHERVU_PAVAN_SAI_ASSOCIATE_SOFTWARE_DEVELOPER.pdf" download="Pavan_Sai_Resume.pdf"
+        class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section">
+    <h2>Hobbies & Interests</h2>
+    <div class="hobbies-container">
+      <div class="hobby-card">
+        <span class="hobby-title">Blogging</span>
+        <p>I enjoy writing blogs to share my technical insights and experiences with the developer community.</p>
+      </div>
+      <div class="hobby-card">
+        <span class="hobby-title">Cooking</span>
+        <p>Cooking is my creative outlet, where I experiment with flavors and recipes to unwind.</p>
+      </div>
+      <div class="hobby-card">
+        <span class="hobby-title">Trekking</span>
+        <p>Trekking fuels my love for adventure, offering breathtaking views and a chance to connect with nature.</p>
+      </div>
+      <div class="hobby-card">
+        <span class="hobby-title">Traveling</span>
+        <p>Visiting new places excites me, as I explore diverse landscapes and immerse myself in unique experiences.</p>
+      </div>
+      <div class="hobby-card">
+        <span class="hobby-title">Learning Cultures</span>
+        <p>Learning new cultures keeps me inspired, broadening my perspective through traditions and stories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:podichervupavansai31@gmail.com">podichervupavansai31@gmail.com</a></p>
+    <p>Phone: +91 9160004067</p>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <button id="scroll-top" title="Back to Top">↑</button>
+
+  <footer>
+    <p>© 2025 Pavan Sai Podichervu</p>
+    <div class="social-links">
+      <a href="https://github.com/PavansaiPodichervu" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pavan-sai31/" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://pavanspringfuel.blogspot.com/?m=0" target="_blank" title="Blog" class="blog-link"><i
+          class="fab fa-blogger"></i> Check My Blog!</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
