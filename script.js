@@ -76,18 +76,38 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
-// Contact Form Submission (Basic Alert for Demo)
+
 document
   .getElementById("contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent default only if you want custom handling
-    // Formspree handles submission; just reset the form after success
-    this.reset();
-    // Optional: Add a success message
-    const successMsg = document.createElement("p");
-    successMsg.textContent = "Message sent successfully!";
-    successMsg.style.color = "#64ffda";
-    this.appendChild(successMsg);
-    setTimeout(() => successMsg.remove(), 3000);
+  .addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        form.reset();
+        const successMsg = document.createElement("p");
+        successMsg.textContent = "Message sent successfully!";
+        successMsg.style.color = "#64ffda";
+        form.appendChild(successMsg);
+        setTimeout(() => successMsg.remove(), 3000);
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (error) {
+      const errorMsg = document.createElement("p");
+      errorMsg.textContent = "Oops! Something went wrong.";
+      errorMsg.style.color = "#e6b800";
+      form.appendChild(errorMsg);
+      setTimeout(() => errorMsg.remove(), 3000);
+    }
   });
 
