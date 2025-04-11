@@ -262,26 +262,101 @@ h3 {
 }
 
 /* Experience & Projects */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 4px;
+  background: var(--primary-accent);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  background: var(--secondary-accent);
+  border: 3px solid var(--primary-dark);
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: scale(1.2);
+}
+
 .exp-card,
 .project-card {
   background: var(--secondary-dark);
   padding: 25px;
   border-radius: 12px;
-  text-align: left;
+  margin-left: 60px;
+  width: 100%;
   max-width: 700px;
-  margin: 20px auto;
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exp-card:hover,
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.2);
+}
+
+.exp-card h3 {
+  font-size: 24px;
+  color: var(--primary-accent);
+  margin-bottom: 10px;
+}
+
+.exp-card p {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 15px;
 }
 
 .exp-card ul {
-  list-style: disc;
-  margin-left: 20px;
+  list-style: none;
+  margin-left: 0;
   font-size: 15px;
+}
+
+.exp-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.exp-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-accent);
+  font-size: 20px;
+}
+
+.project-card {
+  margin-left: 0;
+  text-align: left;
 }
 
 /* Hobbies */
@@ -513,6 +588,14 @@ body.light .resource-card:hover {
   background: #e2e8f0;
 }
 
+body.light .timeline::before {
+  background: #0ea5e9;
+}
+
+body.light .timeline-marker {
+  border-color: var(--light-bg);
+}
+
 /* Animation */
 @keyframes pulse {
   0% {
@@ -594,6 +677,33 @@ body.light .resource-card:hover {
     max-width: 100%;
     padding: 15px;
   }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-marker {
+    left: 12px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .exp-card {
+    margin-left: 50px;
+    padding: 20px;
+  }
+
+  .exp-card h3 {
+    font-size: 20px;
+  }
+
+  .exp-card p {
+    font-size: 14px;
+  }
+
+  .exp-card ul li {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -668,6 +778,33 @@ body.light .resource-card:hover {
   }
 
   .resource-card p {
+    font-size: 13px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-marker {
+    left: 7px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .exp-card {
+    margin-left: 40px;
+    padding: 15px;
+  }
+
+  .exp-card h3 {
+    font-size: 18px;
+  }
+
+  .exp-card p {
+    font-size: 13px;
+  }
+
+  .exp-card ul li {
     font-size: 13px;
   }
 }
